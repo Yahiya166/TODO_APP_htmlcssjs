@@ -1,0 +1,83 @@
+* {
+    font-family: sans-serif;
+    color: #0dcaf0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff9;
+}
+
+.bor {
+    border: 1px solid black;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.heading h2 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.heading h2:hover {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.addTodo {
+    text-align: center;
+}
+
+.addTodo input {
+    padding: 3px;
+    width: 60%;
+    outline: none;
+    font-weight: bold;
+    border: 2px solid #0dcaf0;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.main {
+    margin: 10px auto;
+}
+
+.editBtn {
+    color: white;
+    background-color: #0dcaf0;
+    padding: 3px 10px;
+    border: 2px solid white;
+    position: absolute;
+    top: 10px;
+    right: 120px;
+    border-radius: 3px;
+}
+
+.dltBtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    background-color: #0dcaf0;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+
+#btn-all {
+    margin: 10px;
+}
+
+.para {
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    background-color: #0dcaf0;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: larger;
+}

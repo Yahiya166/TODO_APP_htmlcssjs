@@ -1,0 +1,139 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div>
+            <br>
+            <h1>
+                TODO APP
+            </h1>
+        </div>
+        <br>
+        <div class="input-group" class="input">
+
+            <input type="text" id="myInput" class="form-control" placeholder="Enter Todo App"
+                aria-label="Recipient's username with two button addons">
+            <button class="btn bg-dark text-light" id="btn" onclick="input()" type="button">ADD TODO</button>
+
+        </div>
+        <center>
+            <button class="btn btn-outline-light bg-danger" id="btn-all" onclick="deleteAll()" type="button">DELETE
+                ALL</button>
+
+        </center>
+
+    </div>
+
+    <div class="container" id="main">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html> -->
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="container m-auto">
+        <div class="row my-2">
+            <div class="col-md-12 heading text-center">
+                <h2>TODO APP</h2>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12 addTodo">
+                <input type="text" name="Todo" id="todoInput" placeholder="Add Todo">
+                <button class="btn btn-outline-info m-2" onclick="input()">Create Todo</button>
+            </div>
+        </div>
+
+        <div class="row my-4" >
+            <div class="col-md-12">
+                <div id="main">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="row my-3">
+            <div class="col-md-12 text-center">
+                <button class="btn btn-outline-info" onclick="deleteAll()">Delete Todo</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <!-- JS Link -->
+        <script src="app.js"></script>
+
+</body>
+
+</html>
