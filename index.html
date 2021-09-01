@@ -1,78 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Todo App</title>
-</head>
-
-<body>
-    <div class="container">
-
-
-        <div>
-            <br>
-            <h1>
-                TODO APP
-            </h1>
-        </div>
-        <br>
-        <div class="input-group" class="input">
-
-            <input type="text" id="myInput" class="form-control" placeholder="Enter Todo App"
-                aria-label="Recipient's username with two button addons">
-            <button class="btn bg-dark text-light" id="btn" onclick="input()" type="button">ADD TODO</button>
-
-        </div>
-        <center>
-            <button class="btn btn-outline-light bg-danger" id="btn-all" onclick="deleteAll()" type="button">DELETE
-                ALL</button>
-
-        </center>
-
-    </div>
-
-    <div class="container" id="main">
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="app.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-
-</body>
-
-</html> -->
-
-
-
 <!doctype html>
 <html lang="en">
 
@@ -102,19 +27,19 @@
 
         <div class="row mt-5">
             <div class="col-md-12 addTodo">
-                <input type="text" name="Todo" id="todoInput" placeholder="Add Todo">
-                <button class="btn btn-outline-info m-2" onclick="input()">Create Todo</button>
+                <input type="text" name="Todo" id="TO_DO" placeholder="Add Todo">
+                <button class="btn btn-outline-info m-2" onclick="addto()">Create Todo</button>
             </div>
         </div>
 
-        <div class="row my-4" >
+        <div class="row my-4">
             <div class="col-md-12">
-                <div id="main">
+                <ul id="list">
 
-                </div>
+                </ul>
             </div>
         </div>
-        
+
         <div class="row my-3">
             <div class="col-md-12 text-center">
                 <button class="btn btn-outline-info" onclick="deleteAll()">Delete Todo</button>
@@ -131,8 +56,27 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-        <!-- JS Link -->
-        <script src="app.js"></script>
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB_yvp3EbU5mFrDqeEpyinApSzU_YhQPPk",
+            authDomain: "new-todo-74005.firebaseapp.com",
+            databaseURL: "https://new-todo-74005.firebaseio.com",
+            projectId: "new-todo-74005",
+            storageBucket: "new-todo-74005.appspot.com",
+            messagingSenderId: "412605905392",
+            appId: "1:412605905392:web:51fa3b14e113cdfa99c535",
+            measurementId: "G-HETHKFS3FL"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- JS Link -->
+    <script src="app.js"></script>
 
 </body>
 
